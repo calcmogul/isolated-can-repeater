@@ -752,26 +752,26 @@ Source: http://www.st.com/stonline/products/literature/ds/7194/ld1117axx.pdf</de
 <wire x1="-12.705" y1="-2.921" x2="-12.705" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="-12.705" y1="1.016" x2="-12.705" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
 <circle x="-12.065" y="-1.905" radius="0.381" width="0.127" layer="21"/>
-<pad name="1" x="-11.435" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="2" x="-8.895" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="3.805" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="14" x="3.805" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-6.355" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-3.815" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.265" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-1.275" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="15" x="1.265" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="16" x="-1.275" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="17" x="-3.815" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="18" x="-6.355" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="19" x="-8.895" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="20" x="-11.435" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="10" x="11.425" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="9" x="8.885" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="6.345" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="11" x="11.425" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="12" x="8.885" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="13" x="6.345" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <text x="-13.086" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-10.038" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -4466,7 +4466,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C4" library="rcl" deviceset="C-EU" device="025-024X044" value="10uf"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="5V" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="VIN" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
@@ -4509,7 +4509,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C4" gate="G$1" x="35.56" y="50.8"/>
 <instance part="P+5" gate="VCC" x="48.26" y="78.74" rot="R180"/>
 <instance part="GND3" gate="1" x="48.26" y="91.44" rot="R180"/>
-<instance part="5V" gate="G$1" x="5.08" y="53.34" rot="R180"/>
+<instance part="VIN" gate="G$1" x="5.08" y="53.34" rot="R180"/>
 <instance part="GND8" gate="1" x="7.62" y="43.18"/>
 <instance part="IC2" gate="E" x="106.68" y="101.6" rot="R180"/>
 <instance part="IC2" gate="F" x="139.7" y="101.6"/>
@@ -4597,7 +4597,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="5V" gate="G$1" pin="1"/>
+<pinref part="VIN" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="7.62" y1="45.72" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
 </segment>
@@ -4770,7 +4770,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
 <junction x="15.24" y="53.34"/>
-<pinref part="5V" gate="G$1" pin="2"/>
+<pinref part="VIN" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$9" class="0">
