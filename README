@@ -1,0 +1,30 @@
+Hardware
+--------
+Microcontroller (MSP430G2553) x1
+* http://www.digikey.com/product-detail/en/texas-instruments/MSP430G2553IN20/296-28429-5-ND/2638885
+
+Socket (2x7 0.1" pitch) x1
+* http://www.digikey.com/short/35w338
+
+Inverter (CD4069UBE) x1
+* http://www.digikey.com/product-detail/en/texas-instruments/CD4069UBE/296-3518-5-ND/376616
+
+NOR (CD4001UBE) x1
+* http://www.digikey.com/product-detail/en/texas-instruments/CD4001UBE/296-14077-5-ND/525852
+
+CAN Transceiver (ISO1050SUBR) x2
+* http://www.digikey.com/product-detail/en/texas-instruments/ISO1050DUBR/296-24818-2-ND/2094633
+
+Voltage Regulator 3.3V (LD117AV33) x1
+* https://www.sparkfun.com/products/526
+
+100nF Capacitor x1
+* http://www.digikey.ca/product-detail/en/vishay-bc-components/K104Z15Y5VF5TL2/BC1160CT-ND/286782
+
+10uF Capacitor x1
+* http://www.digikey.ca/product-detail/en/murata-electronics-north-america/RCER71H106MWM1H03A/490-7518-3-ND/4277142
+
+MSP430 Software Dependencies
+---------------------
+* msp430-elf-gcc
+* mspdebug
