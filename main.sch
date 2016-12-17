@@ -4444,7 +4444,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="VNI" library="40xx" deviceset="4069" device="N"/>
 <part name="HVISO" library="texas" deviceset="ISO1050" device="DUB" value=""/>
 <part name="LVISO" library="texas" deviceset="ISO1050" device="DUB" value=""/>
-<part name="IC5" library="v-reg" deviceset="LD117A?*" device="V" technology="33"/>
+<part name="LD117AV33" library="v-reg" deviceset="LD117A?*" device="V" technology="33" value=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
@@ -4485,7 +4485,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="VNI" gate="D" x="63.5" y="53.34"/>
 <instance part="HVISO" gate="G$1" x="236.22" y="83.82"/>
 <instance part="LVISO" gate="G$1" x="33.02" y="83.82" rot="R180"/>
-<instance part="IC5" gate="G$1" x="25.4" y="53.34"/>
+<instance part="LD117AV33" gate="G$1" x="25.4" y="53.34"/>
 <instance part="P+1" gate="VCC" x="43.18" y="55.88"/>
 <instance part="GND1" gate="1" x="25.4" y="35.56"/>
 <instance part="RON" gate="P" x="17.78" y="17.78"/>
@@ -4520,7 +4520,7 @@ Source: AVX .. aphvc.pdf</description>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="OUT"/>
+<pinref part="LD117AV33" gate="G$1" pin="OUT"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="43.18" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -4558,7 +4558,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="ADJ"/>
+<pinref part="LD117AV33" gate="G$1" pin="ADJ"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="25.4" y1="38.1" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="45.72" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
@@ -4764,7 +4764,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="IC5" gate="G$1" pin="IN"/>
+<pinref part="LD117AV33" gate="G$1" pin="IN"/>
 <wire x1="7.62" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="53.34" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
