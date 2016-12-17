@@ -4440,8 +4440,8 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="RON" library="40xx" deviceset="4001" device="N"/>
-<part name="VNI" library="40xx" deviceset="4069" device="N"/>
+<part name="NOR" library="40xx" deviceset="4001" device="N"/>
+<part name="INV" library="40xx" deviceset="4069" device="N"/>
 <part name="HVISO" library="texas" deviceset="ISO1050" device="DUB" value=""/>
 <part name="LVISO" library="texas" deviceset="ISO1050" device="DUB" value=""/>
 <part name="LD117AV33" library="v-reg" deviceset="LD117A?*" device="V" technology="33" value=""/>
@@ -4475,21 +4475,21 @@ Source: AVX .. aphvc.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="RON" gate="A" x="86.36" y="86.36" rot="R180"/>
-<instance part="RON" gate="B" x="86.36" y="55.88"/>
-<instance part="RON" gate="C" x="160.02" y="86.36"/>
-<instance part="RON" gate="D" x="160.02" y="55.88" rot="R180"/>
-<instance part="VNI" gate="A" x="106.68" y="88.9" rot="R180"/>
-<instance part="VNI" gate="B" x="139.7" y="88.9"/>
-<instance part="VNI" gate="C" x="182.88" y="53.34" rot="R180"/>
-<instance part="VNI" gate="D" x="63.5" y="53.34"/>
+<instance part="NOR" gate="A" x="86.36" y="86.36" rot="R180"/>
+<instance part="NOR" gate="B" x="86.36" y="55.88"/>
+<instance part="NOR" gate="C" x="160.02" y="86.36"/>
+<instance part="NOR" gate="D" x="160.02" y="55.88" rot="R180"/>
+<instance part="INV" gate="A" x="106.68" y="88.9" rot="R180"/>
+<instance part="INV" gate="B" x="139.7" y="88.9"/>
+<instance part="INV" gate="C" x="182.88" y="53.34" rot="R180"/>
+<instance part="INV" gate="D" x="63.5" y="53.34"/>
 <instance part="HVISO" gate="G$1" x="236.22" y="83.82"/>
 <instance part="LVISO" gate="G$1" x="33.02" y="83.82" rot="R180"/>
 <instance part="LD117AV33" gate="G$1" x="25.4" y="53.34"/>
 <instance part="P+1" gate="VCC" x="43.18" y="55.88"/>
 <instance part="GND1" gate="1" x="25.4" y="35.56"/>
-<instance part="RON" gate="P" x="17.78" y="17.78"/>
-<instance part="VNI" gate="P" x="33.02" y="17.78"/>
+<instance part="NOR" gate="P" x="17.78" y="17.78"/>
+<instance part="INV" gate="P" x="33.02" y="17.78"/>
 <instance part="P+2" gate="VCC" x="17.78" y="27.94"/>
 <instance part="P+3" gate="VCC" x="33.02" y="27.94"/>
 <instance part="P+6" gate="VCC" x="96.52" y="40.64"/>
@@ -4509,8 +4509,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND3" gate="1" x="48.26" y="91.44" rot="R180"/>
 <instance part="VIN" gate="G$1" x="5.08" y="53.34" rot="R180"/>
 <instance part="GND8" gate="1" x="7.62" y="43.18"/>
-<instance part="VNI" gate="E" x="106.68" y="101.6" rot="R180"/>
-<instance part="VNI" gate="F" x="139.7" y="101.6"/>
+<instance part="INV" gate="E" x="106.68" y="101.6" rot="R180"/>
+<instance part="INV" gate="F" x="139.7" y="101.6"/>
 <instance part="GND10" gate="1" x="119.38" y="99.06"/>
 <instance part="GND11" gate="1" x="127" y="99.06"/>
 <instance part="MSP430G2553" gate="G$1" x="124.46" y="30.48"/>
@@ -4528,11 +4528,11 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="35.56" y="53.34"/>
 </segment>
 <segment>
-<pinref part="RON" gate="P" pin="VDD"/>
+<pinref part="NOR" gate="P" pin="VDD"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="VNI" gate="P" pin="VDD"/>
+<pinref part="INV" gate="P" pin="VDD"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -4583,11 +4583,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="220.98" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RON" gate="P" pin="VSS"/>
+<pinref part="NOR" gate="P" pin="VSS"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="VNI" gate="P" pin="VSS"/>
+<pinref part="INV" gate="P" pin="VSS"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4601,12 +4601,12 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="7.62" y1="45.72" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VNI" gate="E" pin="I"/>
+<pinref part="INV" gate="E" pin="I"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="119.38" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VNI" gate="F" pin="I"/>
+<pinref part="INV" gate="F" pin="I"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="127" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
 </segment>
@@ -4627,38 +4627,38 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="RON" gate="B" pin="I1"/>
-<pinref part="VNI" gate="D" pin="O"/>
+<pinref part="NOR" gate="B" pin="I1"/>
+<pinref part="INV" gate="D" pin="O"/>
 <wire x1="73.66" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="RON" gate="A" pin="I1"/>
-<pinref part="VNI" gate="A" pin="O"/>
+<pinref part="NOR" gate="A" pin="I1"/>
+<pinref part="INV" gate="A" pin="O"/>
 <wire x1="96.52" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="RON" gate="C" pin="I0"/>
-<pinref part="VNI" gate="B" pin="O"/>
+<pinref part="NOR" gate="C" pin="I0"/>
+<pinref part="INV" gate="B" pin="O"/>
 <wire x1="149.86" y1="88.9" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="RON" gate="D" pin="I0"/>
-<pinref part="VNI" gate="C" pin="O"/>
+<pinref part="NOR" gate="D" pin="I0"/>
+<pinref part="INV" gate="C" pin="O"/>
 <wire x1="172.72" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="RON" gate="D" pin="O"/>
-<pinref part="RON" gate="C" pin="I1"/>
+<pinref part="NOR" gate="D" pin="O"/>
+<pinref part="NOR" gate="C" pin="I1"/>
 <wire x1="152.4" y1="55.88" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="VNI" gate="A" pin="I"/>
+<pinref part="INV" gate="A" pin="I"/>
 <wire x1="152.4" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="55.88" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
 <junction x="152.4" y="55.88"/>
@@ -4666,11 +4666,11 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="RON" gate="B" pin="O"/>
-<pinref part="VNI" gate="B" pin="I"/>
+<pinref part="NOR" gate="B" pin="O"/>
+<pinref part="INV" gate="B" pin="I"/>
 <wire x1="93.98" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="55.88" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="RON" gate="A" pin="I0"/>
+<pinref part="NOR" gate="A" pin="I0"/>
 <wire x1="93.98" y1="55.88" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
 <junction x="93.98" y="55.88"/>
 </segment>
@@ -4705,7 +4705,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="VNI" gate="C" pin="I"/>
+<pinref part="INV" gate="C" pin="I"/>
 <pinref part="HVISO" gate="G$1" pin="RXD"/>
 <wire x1="193.04" y1="53.34" x2="218.44" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="83.82" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
@@ -4713,7 +4713,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="RON" gate="C" pin="O"/>
+<pinref part="NOR" gate="C" pin="O"/>
 <pinref part="HVISO" gate="G$1" pin="TXD"/>
 <wire x1="167.64" y1="86.36" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
@@ -4726,7 +4726,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="RON" gate="A" pin="O"/>
+<pinref part="NOR" gate="A" pin="O"/>
 <pinref part="LVISO" gate="G$1" pin="TXD"/>
 <wire x1="78.74" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
@@ -4739,14 +4739,14 @@ Source: AVX .. aphvc.pdf</description>
 <net name="N$20" class="0">
 <segment>
 <pinref part="LVISO" gate="G$1" pin="RXD"/>
-<pinref part="VNI" gate="D" pin="I"/>
+<pinref part="INV" gate="D" pin="I"/>
 <wire x1="45.72" y1="83.82" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="83.82" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="RON" gate="B" pin="I0"/>
+<pinref part="NOR" gate="B" pin="I0"/>
 <wire x1="99.06" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="20.32" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
@@ -4755,7 +4755,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="RON" gate="D" pin="I1"/>
+<pinref part="NOR" gate="D" pin="I1"/>
 <wire x1="147.32" y1="20.32" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="58.42" x2="205.74" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="58.42" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
