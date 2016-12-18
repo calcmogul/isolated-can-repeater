@@ -887,7 +887,7 @@
 <rectangle x1="5.86" y1="7.03" x2="6.14" y2="8.07" layer="27"/>
 </package>
 <package name="RGE24">
-<description>*** TI: RGE *** JEDEC: S-PQFP-N24 *** 24 PINS *** 
+<description>*** TI: RGE *** JEDEC: S-PQFP-N24 *** 24 PINS ***
 ---&gt; PIN25 (exposed thermal die pad) should be connected with GND</description>
 <wire x1="-1.96" y1="1.96" x2="-1.44" y2="1.96" width="0.075" layer="21"/>
 <wire x1="-1.96" y1="1.96" x2="-1.96" y2="1.44" width="0.075" layer="21"/>
@@ -1368,7 +1368,7 @@
 <rectangle x1="-8.69" y1="-4.85" x2="-8.46" y2="-3.62" layer="27" rot="R180"/>
 </package>
 <package name="RHA40">
-<description>*** TI: RHA *** JEDEC: S-PQFP-N40 *** 40 PINS *** 
+<description>*** TI: RHA *** JEDEC: S-PQFP-N40 *** 40 PINS ***
 ---&gt; PIN TP (exposed thermal die pad) should be connected with GND</description>
 <wire x1="-2.95" y1="2.95" x2="2.95" y2="2.95" width="0.127" layer="51"/>
 <wire x1="-2.95" y1="2.95" x2="-2.95" y2="-2.95" width="0.127" layer="51"/>
@@ -1428,7 +1428,7 @@
 <text x="-2.76" y="-4.31" size="1.016" layer="27">&gt;VALUE</text>
 </package>
 <package name="RGZ48">
-<description>*** TI: RGZ *** JEDEC: S-PQFP-N48 *** 48 PINS *** 
+<description>*** TI: RGZ *** JEDEC: S-PQFP-N48 *** 48 PINS ***
 ---&gt; PIN TP (exposed thermal die pad) should be connected with GND</description>
 <wire x1="-3.45" y1="3.45" x2="3.45" y2="3.45" width="0.127" layer="21"/>
 <wire x1="-3.45" y1="3.45" x2="-3.45" y2="-3.45" width="0.127" layer="21"/>
@@ -26173,8 +26173,8 @@ Rev 1.0   ***  06/2010</description>
 </devices>
 </deviceset>
 <deviceset name="F552X---PN80">
-<description>***MSP430F552X***PN80 
-http://www.ti.com/lit/gpn/msp430f5529 
+<description>***MSP430F552X***PN80
+http://www.ti.com/lit/gpn/msp430f5529
 Rev1.0 06/2010    For F552X where X is 1,5,7,9</description>
 <gates>
 <gate name="G$1" symbol="F552X---PN80" x="0" y="0"/>
@@ -26274,7 +26274,7 @@ Rev1.0 06/2010    For F552X where X is 1,5,7,9</description>
 Rev.1.0 06\2010  &lt;p&gt;
 http://focus.ti.com/docs/prod/folders/print/msp430f5529.html&lt;p&gt;
 Datasheet: http://www.ti.com/lit/gpn/msp430f5529&lt;p&gt;
-MSP430F5528IZQE, MSP430F5526IZQE, MSP430F5524IZQE, 
+MSP430F5528IZQE, MSP430F5526IZQE, MSP430F5524IZQE,
 MSP430F5522IZQE, MSP430F5514IZQE, MSP430F5513IZQE</description>
 <gates>
 <gate name="G$1" symbol="F55[0/1/2]X---ZQE80" x="2.54" y="0"/>
@@ -26372,8 +26372,8 @@ MSP430F5522IZQE, MSP430F5514IZQE, MSP430F5513IZQE</description>
 <deviceset name="F55[0/1/2]X---RGC64">
 <description>***F55[0/1/2]X***RGC64
 Rev. 1.0 06/2010
-"http://www.ti.com/lit/gpn/msp430f5529"  
-"http://www.ti.com/lit/gpn/msp430f5509"  
+"http://www.ti.com/lit/gpn/msp430f5529"
+"http://www.ti.com/lit/gpn/msp430f5509"
 F5513/F5514 with limited Functions on some Pins</description>
 <gates>
 <gate name="G$1" symbol="F55[0/1/2]X---RGC64" x="0" y="-10.16"/>
@@ -26519,7 +26519,7 @@ F5513/F5514 with limited Functions on some Pins</description>
 </deviceset>
 <deviceset name="F55[0/1]X---RGZ48">
 <description>&lt;b&gt;***F55[0/1/2]X*** RGZ48&lt;/b&gt; &lt;p&gt;
-Rev. 1.0 06/2010 
+Rev. 1.0 06/2010
 "http://www.ti.com/lit/gpn/msp430f5509"</description>
 <gates>
 <gate name="G$1" symbol="F55[0/1]X---RGZ48" x="-5.08" y="5.08"/>
@@ -26584,8 +26584,8 @@ Rev. 1.0 06/2010
 </devices>
 </deviceset>
 <deviceset name="F55[0/1]X---PT48">
-<description>***F55[0/1/2]X*** PT48 
-Rev. 1.0 06/2010 
+<description>***F55[0/1/2]X*** PT48
+Rev. 1.0 06/2010
 "http://www.ti.com/lit/gpn/msp430f5509"
 Only for FF5504, F5508,F5509,F5510</description>
 <gates>
@@ -27090,7 +27090,7 @@ Rev 1.0   ***  06/2010</description>
 </devices>
 </deviceset>
 <deviceset name="F461X---PZ100">
-<description>***MSP430F461X***  PZ100 
+<description>***MSP430F461X***  PZ100
 http://focus.ti.com/docs/prod/folders/print/msp430f4619.html
  Rev1.0 06/2010</description>
 <gates>
@@ -27207,7 +27207,7 @@ http://focus.ti.com/docs/prod/folders/print/msp430f4619.html
 </devices>
 </deviceset>
 <deviceset name="F461X1---PZ100">
-<description>***MSP430F461X***   PZ100 
+<description>***MSP430F461X***   PZ100
 http://focus.ti.com/docs/prod/folders/print/msp430f46191.html
  Rev1.0 06/2010</description>
 <gates>
@@ -27517,7 +27517,7 @@ http://focus.ti.com/docs/prod/folders/print/msp430f46191.html
 </devices>
 </deviceset>
 <deviceset name="F51X[1/2]---DA38">
-<description>***MSP430F51x2***DA38 
+<description>***MSP430F51x2***DA38
 Rev 1.0 *** 06/2010</description>
 <gates>
 <gate name="G$1" symbol="F51X2---DA38" x="-2.54" y="-5.08"/>
@@ -27571,7 +27571,7 @@ Rev 1.0 *** 06/2010</description>
 </devices>
 </deviceset>
 <deviceset name="F51X[1/2]---RSB40">
-<description>***MSP430F51x2***RSB40 
+<description>***MSP430F51x2***RSB40
 Rev 1.0 *** 06/2010</description>
 <gates>
 <gate name="G$1" symbol="F51X2---RSB40" x="0" y="-2.54"/>
@@ -27628,7 +27628,7 @@ Rev 1.0 *** 06/2010</description>
 </devices>
 </deviceset>
 <deviceset name="L/C09X---PW14">
-<description>&lt;h1&gt;MSP430[L/C]09X &lt;/h1&gt; *** PW14  ** 
+<description>&lt;h1&gt;MSP430[L/C]09X &lt;/h1&gt; *** PW14  **
 Rev 1.0 *** 06/2010</description>
 <gates>
 <gate name="G$1" symbol="L/C09X--PW14" x="0" y="0"/>
@@ -27857,7 +27857,7 @@ Rev 1.0 *** 06/2010</description>
 <deviceset name="G2X[2/3]1---PW14">
 <description>&lt;h1&gt;MSP430G2X[2/3]1&lt;/h1&gt;
 TSSOP (PW) 14 Pin Package &lt;br&gt;
-http://focus.ti.com/docs/prod/folders/print/msp430g2221.html &lt;br&gt; 
+http://focus.ti.com/docs/prod/folders/print/msp430g2221.html &lt;br&gt;
 MSP430G2121, MSP430G2221, MSP430G2131</description>
 <gates>
 <gate name="G$1" symbol="G2X[2/3]1---N/PW14" x="-2.54" y="0"/>
@@ -27953,7 +27953,7 @@ http://focus.ti.com/docs/prod/folders/print/msp430g2111.html</description>
 <deviceset name="G2X[2/3]1---N14">
 <description>&lt;h1&gt;MSP430G2X[2/3]1&lt;/h1&gt;
 PDIP (N) 14 Pin Package &lt;br&gt;
-http://focus.ti.com/docs/prod/folders/print/msp430g2221.html &lt;br&gt; 
+http://focus.ti.com/docs/prod/folders/print/msp430g2221.html &lt;br&gt;
 MSP430G2121, MSP430G2221, MSP430G2131</description>
 <gates>
 <gate name="G$1" symbol="G2X[2/3]1---N/PW14" x="-2.54" y="0"/>
