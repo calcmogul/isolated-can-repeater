@@ -1,0 +1,45 @@
+cExtensions {
+  c
+  h
+}
+
+cppHeaderExtensions {
+  hpp
+  inc
+}
+
+cppSrcExtensions {
+  cpp
+}
+
+otherExtensions {
+}
+
+genFolderExclude {
+}
+
+genFileExclude {
+}
+
+modifiableFolderExclude {
+  \.git
+  build
+}
+
+modifiableFileExclude {
+}
+
+includeRelated {
+}
+
+includeCSys {
+}
+
+includeCppSys {
+}
+
+includeOtherLibs {
+}
+
+includeProject {
+}
