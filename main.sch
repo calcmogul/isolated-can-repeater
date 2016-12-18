@@ -4442,8 +4442,8 @@ Source: AVX .. aphvc.pdf</description>
 <parts>
 <part name="NOR" library="40xx" deviceset="4001" device="N"/>
 <part name="INV" library="40xx" deviceset="4069" device="N"/>
-<part name="HVISO" library="texas" deviceset="ISO1050" device="DUB" value=""/>
-<part name="LVISO" library="texas" deviceset="ISO1050" device="DUB" value=""/>
+<part name="ISO1" library="texas" deviceset="ISO1050" device="DUB" value=""/>
+<part name="ISO2" library="texas" deviceset="ISO1050" device="DUB" value=""/>
 <part name="LD117AV33" library="v-reg" deviceset="LD117A?*" device="V" technology="33" value=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -4456,8 +4456,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="CANLV" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="CANHV" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="CAN2" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="CAN1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
@@ -4483,8 +4483,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="INV" gate="B" x="139.7" y="88.9"/>
 <instance part="INV" gate="C" x="182.88" y="53.34" rot="R180"/>
 <instance part="INV" gate="D" x="63.5" y="53.34"/>
-<instance part="HVISO" gate="G$1" x="236.22" y="83.82"/>
-<instance part="LVISO" gate="G$1" x="33.02" y="83.82" rot="R180"/>
+<instance part="ISO1" gate="G$1" x="236.22" y="83.82"/>
+<instance part="ISO2" gate="G$1" x="33.02" y="83.82" rot="R180"/>
 <instance part="LD117AV33" gate="G$1" x="25.4" y="53.34"/>
 <instance part="P+1" gate="VCC" x="43.18" y="55.88"/>
 <instance part="GND1" gate="1" x="25.4" y="35.56"/>
@@ -4499,8 +4499,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND5" gate="1" x="149.86" y="35.56"/>
 <instance part="P+4" gate="VCC" x="220.98" y="88.9"/>
 <instance part="GND2" gate="1" x="220.98" y="76.2"/>
-<instance part="CANLV" gate="A" x="12.7" y="86.36" rot="R180"/>
-<instance part="CANHV" gate="A" x="256.54" y="81.28"/>
+<instance part="CAN2" gate="A" x="12.7" y="86.36" rot="R180"/>
+<instance part="CAN1" gate="A" x="256.54" y="81.28"/>
 <instance part="GND6" gate="1" x="17.78" y="7.62"/>
 <instance part="GND7" gate="1" x="33.02" y="7.62"/>
 <instance part="C1" gate="G$1" x="15.24" y="50.8"/>
@@ -4546,12 +4546,12 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="157.48" y1="38.1" x2="165.1" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HVISO" gate="G$1" pin="VCC1"/>
+<pinref part="ISO1" gate="G$1" pin="VCC1"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="220.98" y1="86.36" x2="223.52" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LVISO" gate="G$1" pin="VCC1"/>
+<pinref part="ISO2" gate="G$1" pin="VCC1"/>
 <wire x1="48.26" y1="81.28" x2="45.72" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
@@ -4578,7 +4578,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="MSP430G2553" gate="G$1" pin="20"/>
 </segment>
 <segment>
-<pinref part="HVISO" gate="G$1" pin="GND1"/>
+<pinref part="ISO1" gate="G$1" pin="GND1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="220.98" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
 </segment>
@@ -4591,7 +4591,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LVISO" gate="G$1" pin="GND1"/>
+<pinref part="ISO2" gate="G$1" pin="GND1"/>
 <wire x1="48.26" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
@@ -4677,36 +4677,36 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="HVISO" gate="G$1" pin="VCC2"/>
-<pinref part="CANHV" gate="A" pin="1"/>
+<pinref part="ISO1" gate="G$1" pin="VCC2"/>
+<pinref part="CAN1" gate="A" pin="1"/>
 <wire x1="254" y1="86.36" x2="248.92" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="HVISO" gate="G$1" pin="CANH"/>
-<pinref part="CANHV" gate="A" pin="2"/>
+<pinref part="ISO1" gate="G$1" pin="CANH"/>
+<pinref part="CAN1" gate="A" pin="2"/>
 <wire x1="254" y1="83.82" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="HVISO" gate="G$1" pin="CANL"/>
-<pinref part="CANHV" gate="A" pin="3"/>
+<pinref part="ISO1" gate="G$1" pin="CANL"/>
+<pinref part="CAN1" gate="A" pin="3"/>
 <wire x1="254" y1="81.28" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="HVISO" gate="G$1" pin="GND2"/>
-<pinref part="CANHV" gate="A" pin="4"/>
+<pinref part="ISO1" gate="G$1" pin="GND2"/>
+<pinref part="CAN1" gate="A" pin="4"/>
 <wire x1="254" y1="78.74" x2="248.92" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="INV" gate="C" pin="I"/>
-<pinref part="HVISO" gate="G$1" pin="RXD"/>
+<pinref part="ISO1" gate="G$1" pin="RXD"/>
 <wire x1="193.04" y1="53.34" x2="218.44" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="83.82" x2="223.52" y2="83.82" width="0.1524" layer="91"/>
 </segment>
@@ -4714,7 +4714,7 @@ Source: AVX .. aphvc.pdf</description>
 <net name="N$25" class="0">
 <segment>
 <pinref part="NOR" gate="C" pin="O"/>
-<pinref part="HVISO" gate="G$1" pin="TXD"/>
+<pinref part="ISO1" gate="G$1" pin="TXD"/>
 <wire x1="167.64" y1="86.36" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="81.28" x2="223.52" y2="81.28" width="0.1524" layer="91"/>
@@ -4727,7 +4727,7 @@ Source: AVX .. aphvc.pdf</description>
 <net name="N$24" class="0">
 <segment>
 <pinref part="NOR" gate="A" pin="O"/>
-<pinref part="LVISO" gate="G$1" pin="TXD"/>
+<pinref part="ISO2" gate="G$1" pin="TXD"/>
 <wire x1="78.74" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
@@ -4738,7 +4738,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="LVISO" gate="G$1" pin="RXD"/>
+<pinref part="ISO2" gate="G$1" pin="RXD"/>
 <pinref part="INV" gate="D" pin="I"/>
 <wire x1="45.72" y1="83.82" x2="53.34" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="83.82" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
@@ -4774,29 +4774,29 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="CANLV" gate="A" pin="1"/>
-<pinref part="LVISO" gate="G$1" pin="VCC2"/>
+<pinref part="CAN2" gate="A" pin="1"/>
+<pinref part="ISO2" gate="G$1" pin="VCC2"/>
 <wire x1="15.24" y1="81.28" x2="20.32" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="CANLV" gate="A" pin="2"/>
-<pinref part="LVISO" gate="G$1" pin="CANH"/>
+<pinref part="CAN2" gate="A" pin="2"/>
+<pinref part="ISO2" gate="G$1" pin="CANH"/>
 <wire x1="15.24" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="CANLV" gate="A" pin="3"/>
-<pinref part="LVISO" gate="G$1" pin="CANL"/>
+<pinref part="CAN2" gate="A" pin="3"/>
+<pinref part="ISO2" gate="G$1" pin="CANL"/>
 <wire x1="15.24" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="CANLV" gate="A" pin="4"/>
-<pinref part="LVISO" gate="G$1" pin="GND2"/>
+<pinref part="CAN2" gate="A" pin="4"/>
+<pinref part="ISO2" gate="G$1" pin="GND2"/>
 <wire x1="15.24" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
