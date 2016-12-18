@@ -18,11 +18,11 @@ CAN Transceiver (ISO1050SUBR) x2
 Voltage Regulator 3.3V (LD117AV33) x1
 * https://www.sparkfun.com/products/526
 
-100nF Capacitor x1
-* http://www.digikey.ca/product-detail/en/vishay-bc-components/K104Z15Y5VF5TL2/BC1160CT-ND/286782
+0.1μF Capacitor x1
+* http://www.digikey.com/product-detail/en/vishay-bc-components/K104Z15Y5VF5TL2/BC1160CT-ND/286782
 
-10uF Capacitor x1
-* http://www.digikey.ca/product-detail/en/murata-electronics-north-america/RCER71H106MWM1H03A/490-7518-3-ND/4277142
+10μF Capacitor x1
+* http://www.digikey.com/product-detail/en/tdk-corporation/FK24X5R1C106K/445-8497-ND/2815427
 
 MSP430 Software Dependencies
 ----------------------------
