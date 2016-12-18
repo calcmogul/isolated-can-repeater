@@ -1662,7 +1662,7 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="NOR" library="40xx" package="DIL14" value="4001N" x="17.78" y="29.845" smashed="yes" rot="R270">
+<element name="NAND" library="40xx" package="DIL14" value="4011N" x="17.78" y="29.845" smashed="yes" rot="R270">
 <attribute name="VALUE" x="17.145" y="29.845" size="1.27" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
 <element name="INV" library="40xx" package="DIL14" value="4069N" x="29.21" y="29.845" smashed="yes" rot="R270">
@@ -1707,7 +1707,7 @@ Please make sure your boards conform to these design rules.</description>
 <signals>
 <signal name="VCC">
 <contactref element="LD117AV33" pad="2"/>
-<contactref element="NOR" pad="14"/>
+<contactref element="NAND" pad="14"/>
 <contactref element="INV" pad="14"/>
 <contactref element="ICSP" pad="1"/>
 <contactref element="ISO1" pad="1"/>
@@ -1725,7 +1725,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="LD117AV33" pad="1"/>
 <contactref element="ICSP" pad="2"/>
 <contactref element="ISO1" pad="4"/>
-<contactref element="NOR" pad="7"/>
+<contactref element="NAND" pad="7"/>
 <contactref element="INV" pad="7"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
@@ -1758,14 +1758,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.16" y1="27.94" x2="5.08" y2="22.86" width="0.254" layer="16"/>
 </signal>
 <signal name="N$3">
-<contactref element="NOR" pad="6"/>
+<contactref element="NAND" pad="6"/>
 <contactref element="INV" pad="8"/>
 <wire x1="13.97" y1="24.765" x2="17.78" y2="20.955" width="0.254" layer="16"/>
 <wire x1="17.78" y1="20.955" x2="31.75" y2="20.955" width="0.254" layer="16"/>
 <wire x1="31.75" y1="20.955" x2="33.02" y2="22.225" width="0.254" layer="16"/>
 </signal>
 <signal name="N$4">
-<contactref element="NOR" pad="2"/>
+<contactref element="NAND" pad="2"/>
 <contactref element="INV" pad="2"/>
 <wire x1="13.97" y1="34.925" x2="15.24" y2="34.925" width="0.254" layer="16"/>
 <wire x1="15.24" y1="34.925" x2="16.51" y2="33.655" width="0.254" layer="16"/>
@@ -1773,14 +1773,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.13" y1="33.655" x2="25.4" y2="34.925" width="0.254" layer="16"/>
 </signal>
 <signal name="N$5">
-<contactref element="NOR" pad="8"/>
+<contactref element="NAND" pad="8"/>
 <contactref element="INV" pad="4"/>
 <wire x1="21.59" y1="22.225" x2="23.495" y2="24.13" width="0.254" layer="16"/>
 <wire x1="23.495" y1="27.94" x2="25.4" y2="29.845" width="0.254" layer="16"/>
 <wire x1="23.495" y1="27.94" x2="23.495" y2="24.13" width="0.254" layer="16"/>
 </signal>
 <signal name="N$6">
-<contactref element="NOR" pad="12"/>
+<contactref element="NAND" pad="12"/>
 <contactref element="INV" pad="6"/>
 <wire x1="22.86" y1="31.115" x2="21.59" y2="32.385" width="0.254" layer="16"/>
 <wire x1="22.86" y1="31.115" x2="26.67" y2="31.115" width="0.254" layer="16"/>
@@ -1789,8 +1789,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="27.305" y1="26.67" x2="25.4" y2="24.765" width="0.254" layer="16"/>
 </signal>
 <signal name="N$7">
-<contactref element="NOR" pad="11"/>
-<contactref element="NOR" pad="9"/>
+<contactref element="NAND" pad="11"/>
+<contactref element="NAND" pad="9"/>
 <contactref element="INV" pad="1"/>
 <wire x1="25.4" y1="37.465" x2="23.495" y2="35.56" width="0.254" layer="1"/>
 <wire x1="21.59" y1="29.845" x2="23.495" y2="31.75" width="0.254" layer="1"/>
@@ -1799,9 +1799,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="23.495" y1="31.75" x2="23.495" y2="26.67" width="0.254" layer="1"/>
 </signal>
 <signal name="N$8">
-<contactref element="NOR" pad="4"/>
+<contactref element="NAND" pad="4"/>
 <contactref element="INV" pad="3"/>
-<contactref element="NOR" pad="1"/>
+<contactref element="NAND" pad="1"/>
 <wire x1="15.24" y1="36.195" x2="26.67" y2="36.195" width="0.254" layer="16"/>
 <wire x1="27.305" y1="34.29" x2="25.4" y2="32.385" width="0.254" layer="16"/>
 <wire x1="27.305" y1="34.29" x2="27.305" y2="35.56" width="0.254" layer="16"/>
@@ -1838,7 +1838,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="33.02" y1="24.765" x2="30.48" y2="22.225" width="0.254" layer="1"/>
 </signal>
 <signal name="N$22">
-<contactref element="NOR" pad="13"/>
+<contactref element="NAND" pad="13"/>
 <wire x1="19.05" y1="24.765" x2="19.05" y2="32.385" width="0.254" layer="1"/>
 <wire x1="21.59" y1="34.925" x2="19.05" y2="32.385" width="0.254" layer="1"/>
 <contactref element="MSP430G2553" pad="13"/>
@@ -1878,7 +1878,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.4" y1="10.16" x2="25.4" y2="2.54" width="0.254" layer="1"/>
 </signal>
 <signal name="N$21">
-<contactref element="NOR" pad="5"/>
+<contactref element="NAND" pad="5"/>
 <contactref element="MSP430G2553" pad="8"/>
 <wire x1="13.97" y1="27.305" x2="12.065" y2="25.4" width="0.254" layer="1"/>
 <wire x1="8.89" y1="24.13" x2="2.54" y2="17.78" width="0.254" layer="1"/>
@@ -1887,7 +1887,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.065" y1="24.765" x2="12.065" y2="25.4" width="0.254" layer="1"/>
 </signal>
 <signal name="N$24">
-<contactref element="NOR" pad="3"/>
+<contactref element="NAND" pad="3"/>
 <contactref element="ISO2" pad="3"/>
 <contactref element="MSP430G2553" pad="9"/>
 <wire x1="13.97" y1="32.385" x2="12.065" y2="34.29" width="0.254" layer="1"/>
@@ -1914,7 +1914,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="23.495" y1="25.4" x2="23.495" y2="22.225" width="0.254" layer="1"/>
 </signal>
 <signal name="N$25">
-<contactref element="NOR" pad="10"/>
+<contactref element="NAND" pad="10"/>
 <contactref element="ISO1" pad="3"/>
 <contactref element="MSP430G2553" pad="12"/>
 <wire x1="21.59" y1="27.305" x2="19.685" y2="25.4" width="0.254" layer="1"/>

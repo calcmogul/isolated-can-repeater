@@ -173,11 +173,9 @@ Based on the following sources:
 </package>
 </packages>
 <symbols>
-<symbol name="4001">
+<symbol name="4011">
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
-<wire x1="-2.54" y1="2.54" x2="1.778" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
 <text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="I0" x="-7.62" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
@@ -202,14 +200,14 @@ Based on the following sources:
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="4001" prefix="IC">
-<description>Quad 2-input &lt;b&gt;NOR&lt;/b&gt;</description>
+<deviceset name="4011" prefix="IC">
+<description>Quad 2-input &lt;b&gt;NAND&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="4001" x="20.32" y="0" swaplevel="1"/>
-<gate name="B" symbol="4001" x="20.32" y="-15.24" swaplevel="1"/>
-<gate name="C" symbol="4001" x="43.18" y="0" swaplevel="1"/>
-<gate name="D" symbol="4001" x="43.18" y="-15.24" swaplevel="1"/>
-<gate name="P" symbol="PWRN" x="0" y="-5.08" addlevel="request"/>
+<gate name="A" symbol="4011" x="15.24" y="5.08" swaplevel="1"/>
+<gate name="B" symbol="4011" x="15.24" y="-10.16" swaplevel="1"/>
+<gate name="C" symbol="4011" x="38.1" y="5.08" swaplevel="1"/>
+<gate name="D" symbol="4011" x="38.1" y="-10.16" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="-2.54" y="-2.54" addlevel="request"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -4440,7 +4438,7 @@ Source: AVX .. aphvc.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="NOR" library="40xx" deviceset="4001" device="N"/>
+<part name="NAND" library="40xx" deviceset="4011" device="N"/>
 <part name="INV" library="40xx" deviceset="4069" device="N"/>
 <part name="ISO1" library="texas" deviceset="ISO1050" device="DUB" value=""/>
 <part name="ISO2" library="texas" deviceset="ISO1050" device="DUB" value=""/>
@@ -4475,10 +4473,10 @@ Source: AVX .. aphvc.pdf</description>
 <plain>
 </plain>
 <instances>
-<instance part="NOR" gate="A" x="86.36" y="86.36" rot="R180"/>
-<instance part="NOR" gate="B" x="86.36" y="55.88"/>
-<instance part="NOR" gate="C" x="160.02" y="86.36"/>
-<instance part="NOR" gate="D" x="160.02" y="55.88" rot="R180"/>
+<instance part="NAND" gate="A" x="86.36" y="86.36" rot="R180"/>
+<instance part="NAND" gate="B" x="86.36" y="55.88"/>
+<instance part="NAND" gate="C" x="160.02" y="86.36"/>
+<instance part="NAND" gate="D" x="160.02" y="55.88" rot="R180"/>
 <instance part="INV" gate="A" x="106.68" y="88.9" rot="R180"/>
 <instance part="INV" gate="B" x="139.7" y="88.9"/>
 <instance part="INV" gate="C" x="182.88" y="53.34" rot="R180"/>
@@ -4488,7 +4486,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="LD117AV33" gate="G$1" x="25.4" y="53.34"/>
 <instance part="P+1" gate="VCC" x="43.18" y="55.88"/>
 <instance part="GND1" gate="1" x="25.4" y="35.56"/>
-<instance part="NOR" gate="P" x="17.78" y="17.78"/>
+<instance part="NAND" gate="P" x="17.78" y="17.78"/>
 <instance part="INV" gate="P" x="33.02" y="17.78"/>
 <instance part="P+2" gate="VCC" x="17.78" y="27.94"/>
 <instance part="P+3" gate="VCC" x="33.02" y="27.94"/>
@@ -4528,7 +4526,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="35.56" y="53.34"/>
 </segment>
 <segment>
-<pinref part="NOR" gate="P" pin="VDD"/>
+<pinref part="NAND" gate="P" pin="VDD"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
@@ -4583,7 +4581,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="220.98" y1="78.74" x2="223.52" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="NOR" gate="P" pin="VSS"/>
+<pinref part="NAND" gate="P" pin="VSS"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4627,36 +4625,36 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="NOR" gate="B" pin="I1"/>
+<pinref part="NAND" gate="B" pin="I1"/>
 <pinref part="INV" gate="D" pin="O"/>
 <wire x1="73.66" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="NOR" gate="A" pin="I1"/>
+<pinref part="NAND" gate="A" pin="I1"/>
 <pinref part="INV" gate="A" pin="O"/>
 <wire x1="96.52" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="NOR" gate="C" pin="I0"/>
+<pinref part="NAND" gate="C" pin="I0"/>
 <pinref part="INV" gate="B" pin="O"/>
 <wire x1="149.86" y1="88.9" x2="152.4" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="NOR" gate="D" pin="I0"/>
+<pinref part="NAND" gate="D" pin="I0"/>
 <pinref part="INV" gate="C" pin="O"/>
 <wire x1="172.72" y1="53.34" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="NOR" gate="D" pin="O"/>
-<pinref part="NOR" gate="C" pin="I1"/>
+<pinref part="NAND" gate="D" pin="O"/>
+<pinref part="NAND" gate="C" pin="I1"/>
 <wire x1="152.4" y1="55.88" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="INV" gate="A" pin="I"/>
 <wire x1="152.4" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
@@ -4666,11 +4664,11 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="NOR" gate="B" pin="O"/>
+<pinref part="NAND" gate="B" pin="O"/>
 <pinref part="INV" gate="B" pin="I"/>
 <wire x1="93.98" y1="55.88" x2="114.3" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="55.88" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="NOR" gate="A" pin="I0"/>
+<pinref part="NAND" gate="A" pin="I0"/>
 <wire x1="93.98" y1="55.88" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
 <junction x="93.98" y="55.88"/>
 </segment>
@@ -4713,7 +4711,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="NOR" gate="C" pin="O"/>
+<pinref part="NAND" gate="C" pin="O"/>
 <pinref part="ISO1" gate="G$1" pin="TXD"/>
 <wire x1="167.64" y1="86.36" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="81.28" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
@@ -4726,7 +4724,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="NOR" gate="A" pin="O"/>
+<pinref part="NAND" gate="A" pin="O"/>
 <pinref part="ISO2" gate="G$1" pin="TXD"/>
 <wire x1="78.74" y1="86.36" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="86.36" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
@@ -4746,7 +4744,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="NOR" gate="B" pin="I0"/>
+<pinref part="NAND" gate="B" pin="I0"/>
 <wire x1="99.06" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="20.32" x2="76.2" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
@@ -4755,7 +4753,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="NOR" gate="D" pin="I1"/>
+<pinref part="NAND" gate="D" pin="I1"/>
 <wire x1="147.32" y1="20.32" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="58.42" x2="205.74" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="58.42" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
