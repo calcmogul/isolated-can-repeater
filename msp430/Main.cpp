@@ -7,7 +7,7 @@ constexpr uint8_t kDelayCount = 5;
 
 int main() {
   // Stop watchdog
-  WDTCTL = WDTPW + WDTHOLD;
+  WDTCTL = WDTPW | WDTHOLD;
 
   // Configure P2.0, P2.1, P2.4, and P2.5 for GPIO
   P2SEL &= ~(BIT0 | BIT1 | BIT4 | BIT5);
@@ -49,20 +49,24 @@ int main() {
   __bis_SR_register(LPM1_bits | GIE);
 }
 
+// Only call this from an ISR to avoid synchronization issues
 template <uint8_t Input, uint8_t Output>
 void checkPins(volatile unsigned int& CCR1, volatile unsigned int& CTL,
                volatile unsigned int& CCTL1) {
   // If ISO input toggled
-  if (P2IFG | Input) {
+  if (P2IFG & Input) {
     // If toggled low
-    if ((P2IN | Input) == 0) {
+    if ((P2IN & Input) == 0) {
       // Set output to low immediately
-      P2OUT |= Output;
+      P2OUT &= ~Output;
 
-      // Stop timer if it's running
+      /* Stop timer if it's running. This is guaranteed to not be reordered
+       * after clearing the interrupt flag by the compiler due to the registers
+       * being marked as volatile.
+       */
       CTL = TASSEL_2 | MC_0;
 
-      // Clear pending timer interrupt
+      // Clear potential pending timer interrupt
       CCTL1 &= ~CCIFG;
     } else {
       // Else was toggled high. Start delay timer.

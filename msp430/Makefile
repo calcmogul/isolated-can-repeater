@@ -10,7 +10,7 @@ OBJDUMP := $(PREFIX)objdump
 SIZE := $(PREFIX)size
 
 CPPFLAGS := -Os -Wall -Wextra -g -nostdlib -mmcu=msp430g2553
-CFLAGS := -std=gnu99 $(CPPFLAGS)
+CFLAGS := -std=c11 $(CPPFLAGS)
 CXXFLAGS := -std=c++1y -fno-exceptions -fno-rtti -flto $(CPPFLAGS)
 LDFLAGS := -Wl,-Os -mmcu=msp430g2553
 
