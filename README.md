@@ -15,7 +15,7 @@ This PCB is designed to function as a CAN repeater that galvanically isolates th
 
 ### Thruhole
 
-* 1x12 pin header x1
+* 1x4 pin header x3
 
 ### SMT
 
