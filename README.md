@@ -21,7 +21,6 @@ This PCB is designed to function as a CAN repeater that galvanically isolates th
 
 * 2x6 pin header x1
 
-MSP430 Software Dependencies
-----------------------------
-* msp430-elf-gcc
-* mspdebug
+## MSP430 Software
+
+See [MSP430 README](msp430/README.md).
