@@ -9,8 +9,8 @@ const uint16_t kDelayCount = 1600;
 uint8_t prevInputPins = 0;
 uint8_t currentInputPins = 0;
 
-void checkPins(uint8_t input, uint8_t output, volatile unsigned int* ACCR0,
-               volatile unsigned int* CCTL1);
+void checkPins(const uint8_t input, const uint8_t output,
+               volatile unsigned int* ACCR0, volatile unsigned int* CCTL1);
 
 /*
  * Software loop is used instead of GPIO interrupts on edges because a rising
@@ -36,10 +36,10 @@ int main() {
   P2DIR |= BIT5;   // P2.5 = output for ISO1
 
   // Set ISO1 output high
-  // P2OUT |= BIT5;
+  P2OUT |= BIT5;
 
   // Set ISO2 output high
-  // P2OUT |= BIT0;
+  P2OUT |= BIT0;
 
   /* The delay from ISO1 CAN to ISO2 CAN is ~150ns (under typical conditions) -
    * it's the time needed to receive the signal on one bus plus the time needed
@@ -64,9 +64,6 @@ int main() {
   TA0CTL = TASSEL_2 | MC_1;
   TA1CTL = TASSEL_2 | MC_1;
 
-  TA0CCR0 = kDelayCount;
-  TA1CCR0 = kDelayCount;
-
   __bis_SR_register(GIE);
 
   while (1) {
@@ -77,8 +74,8 @@ int main() {
   }
 }
 
-void checkPins(uint8_t input, uint8_t output, volatile unsigned int* ACCR0,
-               volatile unsigned int* CCTL1) {
+void checkPins(const uint8_t input, const uint8_t output,
+               volatile unsigned int* ACCR0, volatile unsigned int* CCTL1) {
   // If input toggled low
   if ((prevInputPins & input) != 0 && (currentInputPins & input) == 0) {
     // Set output to low immediately

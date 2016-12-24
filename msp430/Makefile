@@ -5,14 +5,12 @@ PREFIX := msp430-elf-
 CC := $(PREFIX)gcc
 CXX := $(PREFIX)g++
 LD := $(PREFIX)gcc
-OBJCOPY := $(PREFIX)objcopy
-OBJDUMP := $(PREFIX)objdump
 SIZE := $(PREFIX)size
 
-CPPFLAGS := -O3 -Wall -Wextra -g -nostdlib -mmcu=msp430g2553
+CPPFLAGS := -O3 -Wall -Wextra -flto -nostdlib -mmcu=msp430g2553
 CFLAGS := -std=c11 $(CPPFLAGS)
-CXXFLAGS := -std=c++1y -fno-exceptions -fno-rtti -flto $(CPPFLAGS)
-LDFLAGS := -Wl,-O3 -mmcu=msp430g2553
+CXXFLAGS := -std=c++1y -fno-exceptions -fno-rtti $(CPPFLAGS)
+LDFLAGS := -O3 -flto -mmcu=msp430g2553
 
 C_SRC := $(wildcard *.c)
 CXX_SRC := $(wildcard *.cpp)
