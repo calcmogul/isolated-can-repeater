@@ -1477,6 +1477,32 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 </package>
 </packages>
 </library>
+<library name="linear">
+<description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
+Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1703,6 +1729,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP3" library="pinhead" package="1X04" value="" x="28.575" y="1.905" smashed="yes">
 <attribute name="VALUE" x="23.495" y="-1.27" size="1.27" layer="27"/>
 </element>
+<element name="IC1" library="linear" package="DIL08" value="LM555N" x="4.445" y="-15.875"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -1742,6 +1769,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.13" y1="21.59" x2="24.13" y2="18.415" width="0.254" layer="1"/>
 <wire x1="13.335" y1="18.415" x2="13.335" y2="21.59" width="0.254" layer="1"/>
 <contactref element="JP1" pad="3"/>
+<contactref element="IC1" pad="1"/>
+<wire x1="6.985" y1="1.905" x2="0.635" y2="-19.685" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="MSP430G2553" pad="16"/>
@@ -1935,6 +1964,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.875" y1="17.145" x2="12.7" y2="13.97" width="0.254" layer="1"/>
 <wire x1="20.955" y1="26.67" x2="19.685" y2="26.67" width="0.254" layer="1"/>
 <wire x1="19.685" y1="26.67" x2="18.415" y2="25.4" width="0.254" layer="1"/>
+</signal>
+<signal name="V+">
+<contactref element="IC1" pad="8"/>
 </signal>
 </signals>
 </board>
